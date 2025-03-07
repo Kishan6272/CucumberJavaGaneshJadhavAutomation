@@ -1,16 +1,19 @@
-package StepDefinitions;
+package PageObject;
 
+import Utilis.CommonUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import pageObjects.HomeStepImpl;
+import PageObject.HomeStepImpl;
 
-public class homeStepDef {
+public class homeStepDef extends CommonUtils {
 
-    static WebDriver driver;
+
+
+    //CommonUtils.chromeDriverTL.set(driver);
+
+
+
     HomeStepImpl homeStep=new HomeStepImpl();
 
     @Given("User navigates to the Login page")
@@ -27,7 +30,7 @@ public class homeStepDef {
 
     @Then("Close the browser")
     public void close_the_browser() {
-       driver.quit();
+        homeStep.close_the_browser();
     }
 
 }

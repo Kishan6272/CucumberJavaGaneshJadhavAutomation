@@ -13,7 +13,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(tags="",
         features={"src\\test\\resources\\features"},
         glue = {"StepDefinitions"},
-        plugin = {"pretty","html:target/htmlreport.report"}
+        plugin = {"pretty","html:target/htmlreport.report"},
+        monochrome = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 
