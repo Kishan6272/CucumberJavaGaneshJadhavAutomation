@@ -30,6 +30,6 @@ public class HomeStepImpl  extends CommonUtils {
 
     public void close_the_browser()
     {
-        CommonUtils.chromeDriverTL.get().quit();
+        CommonUtils.quitBrowser();
     }
 }
