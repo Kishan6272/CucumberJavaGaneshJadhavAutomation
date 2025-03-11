@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="1">
+    <test verbose="2" preserve-order="true" name="D:/SpringBootYoutube/UserServiceKishanScalerServiceDurgesh/JAVASELENIUMRETARGET/CucumberJavaGaneshJadhavAutomation/src/main/java/SingaltonPattern/AppTest.java">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="SingaltonPattern.AppTest">
+                <methods>
+                    <include name="firstTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
